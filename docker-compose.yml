@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  fastapi-app:
+  hello-world-offer:
     build: .
     ports:
       - "8000:8000"
