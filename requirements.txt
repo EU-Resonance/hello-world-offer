@@ -1,5 +1,6 @@
 fastapi
-pydantic
-requests
-pyyaml
 uvicorn
+requests
+pydantic
+pyyaml
+python-multipart
