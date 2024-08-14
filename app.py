@@ -45,7 +45,7 @@ def send_post_request(endpoint, data, headers, auth):
         logger.error(f"Request to {url} failed: {str(e)}")
         raise HTTPException(status_code=response.status_code, detail=str(e))
 
-@app.post("/hello-world-offer-stage/process_metadata/")
+@app.post("/")
 async def process_metadata(file: UploadFile = File(...)):
     try:
         content = await file.read()
