@@ -1,0 +1,87 @@
+catalogs:
+  - title: "Flask API Example Catalogs"
+    description: "Contains a collection of Flask APIs"
+
+representations:
+  - title: "Flask APIs that will return JSON data as a response"
+    mediaType: "json"
+    language: "English"
+
+offers:
+  - title: "Hello World Example using Github, Github Actions, Argocd and the IDSA Data Space Connector"
+    description: "The response from this endpoint will return simple text"
+    keywords:
+      - "hello"
+      - "world"
+      - "flask"
+      - "api"
+      - "idsa"
+      - "example"
+    paymentMethod: "undefined"
+
+catalog_offers:
+  - catalogId: "7d5608c2-02f8-4664-848c-fec1b42c7fc0"
+    offers:
+      - "https://resonance.collab-cloud.eu:8081/api/offers/15512ae1-fa5e-4496-9ed3-b18e7c308665"
+
+offer_representations:
+  - offerId: "15512ae1-fa5e-4496-9ed3-b18e7c308665"
+    representations:
+      - "https://resonance.collab-cloud.eu:8081/api/representations/2ded1c42-6278-4810-a0d4-b35a9653144b"
+
+contracts:
+  - title: "Flask Hello World Contract #1"
+    description: "Contract for Flask Hello World Application"
+    start: "2023-01-01T13:33:44.995+02:00"
+    end: "2026-01-01T13:33:44.995+02:00"
+
+rules:
+  - title: "Rule for the Flask Hello World Application"
+    description: "Policy for the Flask Hello World Application"
+    value: |
+      {
+        "@context" : {
+          "ids" : "https://w3id.org/idsa/core/",
+          "idsc" : "https://w3id.org/idsa/code/"
+        },
+        "@type": "ids:Permission",
+        "@id": "https://w3id.org/idsa/autogen/permission/cf1cb758-b96d-4486-b0a7-f3ac0e289588",
+        "ids:action": [
+          {
+            "@id": "idsc:USE"
+          }
+        ],
+        "ids:description": [
+          {
+            "@value": "provide-access",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+          }
+        ],
+        "ids:title": [
+          {
+            "@value": "Example Usage Policy",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+          }
+        ]
+      }
+
+contract_rules:
+  - contractId: "6d0b7b1f-af55-4eae-861e-5a62e00727c9"
+    rules:
+      - "https://resonance.collab-cloud.eu:8081/api/rules/0f859088-75ad-40f7-abef-f9bd041261a5"
+
+offer_contracts:
+  - offerId: "15512ae1-fa5e-4496-9ed3-b18e7c308665"
+    contracts:
+      - "https://resonance.collab-cloud.eu:8081/api/contracts/6d0b7b1f-af55-4eae-861e-5a62e00727c9"
+
+artifacts:
+  - title: "Flask Hello World API"
+    description: "Will return Hello World in the response"
+    accessUrl: "http://localhost:30001/"
+    automatedDownload: false
+
+representation_artifacts:
+  - representationId: "2ded1c42-6278-4810-a0d4-b35a9653144b"
+    artifacts:
+      - "https://resonance.collab-cloud.eu:8081/api/artifacts/c6d9522b-10ae-4733-852b-f9533fd6f461"
